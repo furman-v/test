@@ -4,10 +4,64 @@ body {
 
   font-family: sans-serif;
 }
-table,td,th,tr{
+table,
+td,
+th,
+tr{
   border-collapse:collapse;
+  border: 1px solid black;
+}
+#col {
+  background-color: wheat;
 }
 .table2 {
-  width:40%;
-  height:400px;
+  width:480px;
+  height:278px;
+}
+#red {
+  background-color:red;
+}
+#yellow {
+  background-color: yellow;;
+}
+#green {
+  background-color: green;
+}
+#brown {
+  background-color: brown;
+}
+#grey {
+  background-color: grey;
+}
+#skyblue {
+  background-color: skyblue;
+}
+#purple {
+  background-color: purple;
+}
+#orange {
+  background-color: orange;
+}
+#khaki {
+  background-color:khaki;
+}
+#blue {
+  background-color:blue;
+}
+#olive {
+  background-color: olive;
+}
+#olivedrab {
+  background-color:olivedrab
+  
+}
+#peru 
+{
+  background-color: peru;
+}
+#pink {
+  background-color: pink;
+}
+#salmon {
+  background-color:salmon;
 }
