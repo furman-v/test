@@ -4,8 +4,12 @@ body {
 
   font-family: sans-serif;
 }
-table,td,th,tr{
+table,
+td,
+th,
+tr{
   border-collapse:collapse;
+  border: 1px solid black;
 }
 .table2 {
   width:40%;
