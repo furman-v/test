@@ -4,12 +4,38 @@ body {
 
   font-family: sans-serif;
 }
+.header,.footer {
+  text-align: center;
+  font-size:15px;
+  background-color: lightpink;
+  color:WHITE;
+  width:100%;
+  height: 75px;
+}
+.foot {
+ 
+  vertical-align: middle;
+}
+.block-left {
+  padding:20px;
+  border-right-color:skyblue;
+  border-right-width: 1px;
+  border-right-style: solid;
+  position:flow; left:30px; top: 90px; width:70%; height:40%;
+}
+.block-right {
+  position:absolute; right:5px; top:80px; width: 25%; height:75%;
+}
+
 table,
 td,
 th,
 tr{
   border-collapse:collapse;
   border: 1px solid black;
+}
+.tab {
+  color:rebeccapurple
 }
 #col {
   background-color: wheat;
@@ -64,4 +90,7 @@ tr{
 }
 #salmon {
   background-color:salmon;
+}
+a {
+  color:maroon;
 }
