@@ -26,6 +26,17 @@ main {
   margin:20px;
 
 }
+.tab {
+  color:rebeccapurple;
+  font-size: medium;
+  
+}
+a:link {
+  color:maroon;
+}
+a:visited {
+  color:black;
+}
 
 table,
 td,
@@ -37,18 +48,18 @@ tr{
 .table1,.table2 {
   margin:15px;
 }
-.tab {
-  color:rebeccapurple
-}
-a:link {
-  color:maroon;
-}
-a:visited {
-  color:black;
-}
+
 aside {
 float:right;
 width:25%;
+margin:10px;
+}
+#songs {
+  width:200px;
+  height:300px;
+  border: 1px dashed red;
+  padding:20px 10px;
+  margin:5px;
 }
 #col {
   background-color: wheat;
