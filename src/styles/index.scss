@@ -22,6 +22,10 @@ main {
   border-right-width: 1px;
   border-right-color:skyblue;
 }
+nav a {
+  text-decoration:none;
+  text-transform: uppercase;
+}
 .article {
   margin:20px;
 
@@ -48,7 +52,13 @@ tr{
 .table1,.table2 {
   margin:15px;
 }
-
+p {
+  text-indent: 15px;
+}
+h2,h3 {
+  text-align:center;
+  text-transform: capitalize;
+}
 aside {
 float:right;
 width:25%;
