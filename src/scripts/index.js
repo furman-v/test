@@ -12,3 +12,27 @@ console.log(min);
 console.log(div);
 console.log(mult);
 
+const user = {
+    name: "Victoria",
+    surname: "Furman",
+    age: 21,
+    dateOfBirth: "26th of December",
+    height: 160,
+    havePets: true,
+    FavFood: ["coffee", "buckwheat", "meat", "avocado"],
+    date: function (name, surname, dateOfBirth) {
+        console.log("Info about the user", this.name + this.surname + this.dateOfBirth);
+
+    }
+
+};
+
+console.log(user.name);
+console.log(user.surname);
+console.log(user.age);
+console.log(user.dateOfBirth);
+console.log(user.height);
+console.log(user.havePets);
+console.log(user.FavFood);
+
+user.date();
