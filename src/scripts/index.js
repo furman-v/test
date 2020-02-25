@@ -19,9 +19,9 @@ const user = {
     dateOfBirth: "26th of December",
     height: 160,
     havePets: true,
-    FavFood: ["coffee", "buckwheat", "meat", "avocado"],
-    date: function (name, surname, dateOfBirth) {
-        console.log("Info about the user", this.name + this.surname + this.dateOfBirth);
+    favFood: ["coffee", "buckwheat", "meat", "avocado"],
+    logNameAndDateOfBirth: function () {
+        console.log("Info about the user", this.name + " " + this.surname + " " + this.dateOfBirth);
 
     }
 
@@ -33,6 +33,6 @@ console.log(user.age);
 console.log(user.dateOfBirth);
 console.log(user.height);
 console.log(user.havePets);
-console.log(user.FavFood);
+console.log(user.favFood);
 
-user.date();
+user.logNameAndDateOfBirth();
