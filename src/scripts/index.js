@@ -1,5 +1,5 @@
-import '../styles/index.scss';
-
+import "../styles/index.scss";
+import "./events";
 const a = 5;
 const b = 10;
 const sum = a + b;
@@ -13,18 +13,19 @@ console.log(div);
 console.log(mult);
 
 const user = {
-    name: "Victoria",
-    surname: "Furman",
-    age: 21,
-    dateOfBirth: "26th of December",
-    height: 160,
-    havePets: true,
-    favFood: ["coffee", "buckwheat", "meat", "avocado"],
-    logNameAndDateOfBirth: function () {
-        console.log("Info about the user", this.name + " " + this.surname + " " + this.dateOfBirth);
-
-    }
-
+  name: "Victoria",
+  surname: "Furman",
+  age: 21,
+  dateOfBirth: "26th of December",
+  height: 160,
+  havePets: true,
+  favFood: ["coffee", "buckwheat", "meat", "avocado"],
+  logNameAndDateOfBirth: function() {
+    console.log(
+      "Info about the user",
+      this.name + " " + this.surname + " " + this.dateOfBirth
+    );
+  }
 };
 
 console.log(user.name);

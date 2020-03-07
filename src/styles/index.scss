@@ -1,38 +1,37 @@
 $body-color: slateblue;
 
 body {
-
   font-family: sans-serif;
 }
-header,footer {
+header,
+footer {
   text-align: center;
-  font-size:15px;
+  font-size: 15px;
   background-color: lightpink;
-  color:WHITE;
-  height:55px;
+  color: WHITE;
+  height: 55px;
   padding: 15px 75px;
 }
 #head1 {
-  font-size:20px;
+  font-size: 20px;
 }
 main {
   float: left;
   width: 70%;
   border-right-style: solid;
   border-right-width: 1px;
-  border-right-color:skyblue;
+  border-right-color: skyblue;
 }
 nav a {
-  text-decoration:none;
+  text-decoration: none;
   text-transform: uppercase;
 }
 .article {
-  margin:20px;
-
+  margin: 20px;
 }
 .responsive {
-   color:slateblue;
-  font-size: 2vw; 
+  color: slateblue;
+  font-size: 2vw;
 }
 p.bold {
   font-weight: bold;
@@ -46,58 +45,76 @@ p.font-variant {
   font-family: monospace;
 }
 .tab {
-  color:rebeccapurple;
+  color: rebeccapurple;
   font-size: medium;
-  
 }
 a:link {
-  color:maroon;
+  color: maroon;
 }
 a:visited {
-  color:black;
+  color: black;
 }
-
+input.country {
+  width: 200px;
+  height: 20px;
+  padding: 10px;
+  margin: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+button.done {
+  width: 75px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: lightcoral;
+}
 table,
 td,
 th,
-tr{
-  border-collapse:collapse;
+tr {
+  border-collapse: collapse;
   border: 1px solid black;
 }
-.table1,.table2 {
-  margin:15px;
+.table1,
+.table2 {
+  margin: 15px;
 }
 p {
   text-indent: 15px;
 }
-h2,h3 {
-  text-align:center;
+h2,
+h3 {
+  text-align: center;
   text-transform: capitalize;
 }
 aside {
-float:right;
-width:25%;
-margin:10px;
+  float: right;
+  width: 25%;
+  margin: 10px;
 }
 #songs {
-  width:200px;
-  height:300px;
+  width: 200px;
+  height: 300px;
   border: 1px dashed red;
-  padding:20px 10px;
-  margin:5px;
+  padding: 20px 10px;
+  margin: 5px;
 }
 #col {
   background-color: wheat;
 }
+.table1 {
+  border: 2 px solid black;
+}
 .table2 {
-  width:480px;
-  height:278px;
+  width: 480px;
+  height: 278px;
 }
 #red {
-  background-color:red;
+  background-color: red;
 }
 #yellow {
-  background-color: yellow;;
+  background-color: yellow;
 }
 #green {
   background-color: green;
@@ -118,27 +135,25 @@ margin:10px;
   background-color: orange;
 }
 #khaki {
-  background-color:khaki;
+  background-color: khaki;
 }
 #blue {
-  background-color:blue;
+  background-color: blue;
 }
 #olive {
   background-color: olive;
 }
 #olivedrab {
-  background-color:olivedrab
-  
+  background-color: olivedrab;
 }
-#peru 
-{
+#peru {
   background-color: peru;
 }
 #pink {
   background-color: pink;
 }
 #salmon {
-  background-color:salmon;
+  background-color: salmon;
 }
 i.fas {
   color: purple;
@@ -146,5 +161,5 @@ i.fas {
 }
 
 footer {
-  clear:both;
+  clear: both;
 }
