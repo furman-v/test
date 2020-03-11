@@ -28,6 +28,9 @@ nav a {
 }
 .article {
   margin: 20px;
+  h2 {
+    background-color: plum;
+  }
 }
 .responsive {
   color: slateblue;
@@ -93,6 +96,19 @@ aside {
   width: 25%;
   margin: 10px;
 }
+ol ~ li {
+  background-color: greenyellow;
+}
+ol > li {
+  background-color: yellow;
+}
+.secondOrderedList > li {
+  color: red;
+}
+.secondOrderedList > ul > li {
+  color: grey;
+}
+
 #songs {
   width: 200px;
   height: 300px;
