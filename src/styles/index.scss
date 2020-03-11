@@ -27,6 +27,7 @@ main {
   border-right-width: 1px;
   border-right-color: skyblue;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 nav a {
   text-decoration: none;
@@ -58,12 +59,7 @@ p.font-variant {
   color: rebeccapurple;
   font-size: medium;
 }
-a:link {
-  color: maroon;
-}
-a:visited {
-  color: black;
-}
+
 input.country {
   width: 200px;
   height: 20px;
@@ -96,6 +92,18 @@ p {
 h3 {
   text-align: center;
   text-transform: capitalize;
+}
+a:link {
+  color: orchid;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: brown;
+}
+a:active {
+  color: khaki;
 }
 aside {
   float: right;
