@@ -6,13 +6,235 @@
     <meta name="description" content="Fun page about Depeche Mode" />
     <meta name="keywords" content="Depeche Mode, songs of the 80th, synthpop" />
     <meta name="author" content="Victoria Furman" />
-    <title>Depeche Mode fun page</title>
+    <title>ProFrontend page</title>
     <script
       src="https://kit.fontawesome.com/a93683c622.js"
       crossorigin="anonymous"
     ></script>
   </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">ProFrontend</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown01"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Dropdown</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-warning my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">
+              This is a simple hero unit, a simple jumbotron-style component for
+              calling extra attention to featured content or information.
+            </p>
+            <hr class="my-4" />
+            <p>
+              It uses utility classes for typography and spacing to space
+              content out within the larger container.
+            </p>
+            <a class="btn btn-warning btn-lg" href="#" role="button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="w-100" src="../src/images/obl-01.jpg" />
+        </div>
+      </div>
+    </section>
+    <section class="container for-whom mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 my-2 text-center">
+          <h2>Кому подойдет курс?</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <div class="text-center">
+                <i class="fas fa-user-friends icon-container text-warning"></i>
+              </div>
+              <h4>
+                Junior Developer
+              </h4>
+              <div class="description">
+                Junior Software Developers are entry-level software developers
+                that assist the development team with all aspects of software
+                design and coding. Their primary role is to learn the codebase,
+                attend design meetings, write basic code, fix bugs, and assist
+                the Development Manager in all design-related tasks.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="text-center">
+                <i class="fas fa-user-cog text-warning"></i>
+              </div>
+              <h4>
+                Mid Developer
+              </h4>
+              <div class="description">
+                Mid-level developers are not designing solutions either, they
+                just perform tasks. The difference with the junior developer is
+                that they perform those
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="text-center">
+                <i class="fas fa-hands-helping text-warning"></i>
+              </div>
+              <h4>
+                Senior Developer
+              </h4>
+              <div class="description">
+                Mid-level developers are not designing solutions either, they
+                just perform tasks. The difference with the junior developer is
+                that they perform those
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=" container aboutTheSchool mt-5">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 my-2 text-center">
+          <h2>О нашей школе</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+          <p>
+            We teach you how to make sites. We will explain how a browser works,
+            how to put into practice HTML, CSS, JavaScript (ES6). Our teachers
+            will explain how to repeat framework steps. They will tell how the
+            Gulp/webpack works (it’s a tool for collecting applications). You
+            will learn tools for accelerating development. And you will use the
+            newest rules which will soon become standards.
+          </p>
+        </div>
+      </div>
+      <div class="row col-md-8 offset-md-2 text-center">
+        <div class="col-sm">
+          <img class="square-image" src="../src/images/html-5.png" />
+        </div>
+        <div class="col-sm">
+          <img class="square-image" src="../src/images/css-3.png" />
+        </div>
+        <div class="col-sm">
+          <img class="square-image" src="../src/images/javascript.png" />
+        </div>
+        <div class="col-sm">
+          <img class="square-image" src="../src/images/html-5.png" />
+        </div>
+        <div class="col-sm">
+          <img class="square-image" src="../src/images/css-3.png" />
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid map">
+      <div class="row registr">
+        <div class="col-md-6 offset-md-3 text-center mt-5">
+          <h3>Register now!</h3>
+          <form>
+            <div class="form-row mt-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-warning btn-lg btn-block button"
+            >
+              Register!
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!---
   <body onload="console.log ('The page is loaded')">
     <header>
       <span id="head1">Depeche Mode</span>
@@ -321,4 +543,4 @@
       <a href="https://www.facebook.com" target="_blank">About us</a>
     </footer>
   </body>
-</html>
+  -->

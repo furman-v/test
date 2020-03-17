@@ -1,4 +1,52 @@
-$body-color: slateblue;
+@import "~bootstrap/scss/bootstrap";
+.jumbotron {
+  background: none;
+}
+.fa-user-friends {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.fa-user-cog {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.fa-hands-helping {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.square-image {
+  width: 50px;
+  height: 50px;
+}
+.for-whom .card {
+  border: none;
+}
+.button {
+  margin-top: 15px;
+}
+.map {
+  position: relative;
+}
+.map::after {
+  background: url("../images/map.png.jpg") center center fixed;
+  position: absolute;
+  height: 800px;
+  width: 1400px;
+  content: "";
+  opacity: 0.3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.container-fluid.map {
+  margin-top: 200px;
+}
+.row.registr {
+  padding-top: 16%;
+}
+/*$body-color: slateblue;
 
 body {
   font-family: sans-serif;
@@ -213,3 +261,4 @@ ol > li {
 footer {
   clear: both;
 }
+*/
