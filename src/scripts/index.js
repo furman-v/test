@@ -1,40 +1,87 @@
 import "../styles/index.scss";
 import "bootstrap";
-//import "./events";
-// const a = 5;
-// const b = 10;
-// const sum = a + b;
-// const min = a - b;
-// const div = a / b;
-// const mult = a * b;
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/js/all";
+let pink;
+let blue;
+let yellow;
+let violet;
+(function() {
+  pink = document.getElementById("pink");
+  blue = document.getElementById("blue");
+  yellow = document.getElementById("yellow");
+  violet = document.getElementById("violet");
 
-// console.log(sum);
-// console.log(min);
-// console.log(div);
-// console.log(mult);
+  const squares = [pink, blue, yellow, violet];
+  squares.forEach(square => {
+    const button = square.getElementsByTagName("button")[0];
+    button.addEventListener("click", () => {
+      addNewTask(square);
+    });
+    getAndDeleteElements(square);
+  });
 
-// const user = {
-//   name: "Victoria",
-//   surname: "Furman",
-//   age: 21,
-//   dateOfBirth: "26th of December",
-//   height: 160,
-//   havePets: true,
-//   favFood: ["coffee", "buckwheat", "meat", "avocado"],
-//   logNameAndDateOfBirth: function() {
-//     console.log(
-//       "Info about the user",
-//       this.name + " " + this.surname + " " + this.dateOfBirth
-//     );
-//   }
-// };
+  function getAndDeleteElements(square) {
+    //функция, которая переносит элементы с одного списка в другой
+    const allLiInToDo = square.querySelectorAll(".toDo li");
 
-// console.log(user.name);
-// console.log(user.surname);
-// console.log(user.age);
-// console.log(user.dateOfBirth);
-// console.log(user.height);
-// console.log(user.havePets);
-// console.log(user.favFood);
+    allLiInToDo.forEach(everyLiInToDo => {
+      everyLiInToDo.addEventListener("click", () => {
+        everyLiInToDo.style.display = "none";
+        const liInDone = square.querySelectorAll(".doneThings li");
+        const index = liInDone.length - 1;
+        liInDone[index].appendChild(everyLiInToDo);
+        everyLiInToDo.style.display = "block";
+      });
+    });
+  }
+})();
+function addNewTask(square) {
+  const value = getInputValue(square);
+  if (value) {
+    addNewElement(value, square);
+  }
+}
+function getInputValue(square) {
+  const value = square.getElementsByClassName("addNewTask")[0].value;
+  return value;
+}
 
-// user.logNameAndDateOfBirth();
+function addNewElement(value, square) {
+  const list = square.getElementsByClassName("toDo")[0];
+  const newLi = getLiWithText(value);
+  list.appendChild(newLi);
+}
+function getLiWithText(value) {
+  const newListItem = document.createElement("li");
+  const checkBox = getCheckBox();
+  const text = document.createTextNode(" " + value);
+  const space = document.createTextNode(" ");
+  const icon = getIcon();
+  newListItem.appendChild(checkBox);
+  newListItem.appendChild(text);
+  newListItem.appendChild(space);
+  newListItem.appendChild(icon);
+  return newListItem;
+}
+function getCheckBox() {
+  const input = document.createElement("input");
+  input.type = "checkbox";
+  return input;
+}
+function getIcon() {
+  const icon = document.createElement("i");
+  icon.className = "fas fa-trash";
+  return icon;
+}
+clickOnIconAndDelete(); //функция, которая должна была удалять элементы по нажатии на иконку
+
+function clickOnIconAndDelete() {
+  const allLis = document.getElementsByTagName("li");
+  const icons = document.getElementsByTagName("i");
+  icons.forEach(icon =>
+    icon.addEventListener("click", () => {
+      this.allLis.remove();
+    })
+  );
+}

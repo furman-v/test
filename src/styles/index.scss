@@ -1,264 +1,67 @@
-@import "~bootstrap/scss/bootstrap";
-.jumbotron {
-  background: none;
+html,
+body,
+.app {
+  height: 100%;
 }
-.fa-user-friends {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-.fa-user-cog {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-.fa-hands-helping {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-.square-image {
-  width: 50px;
-  height: 50px;
-}
-.for-whom .card {
-  border: none;
-}
-.button {
-  margin-top: 15px;
-}
-.map {
-  position: relative;
-}
-.map::after {
-  background: url("../images/map.png.jpg") center center fixed;
-  position: absolute;
-  height: 800px;
-  width: auto;
-  content: "";
-  opacity: 0.3;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-.container-fluid.map {
-  margin-top: 200px;
-}
-.row.registr {
-  padding-top: 16%;
-}
-/*$body-color: slateblue;
-
 body {
   font-family: sans-serif;
 }
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
+.app > .row {
+  height: 50%;
+  border-bottom: 1px solid #717171;
 }
-header,
-footer {
-  text-align: center;
-  font-size: 15px;
-  background-color: lightpink;
-  color: WHITE;
-  height: 35px;
-  padding: 15px 75px;
+.app > .row > .col-6 {
+  border-right: 1px solid #717171;
 }
-#head1 {
-  font-size: 20px;
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
-main {
-  float: left;
-  width: 70%;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: skyblue;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.doneThings li {
+  text-decoration: line-through;
 }
-nav a {
-  text-decoration: none;
-  text-transform: uppercase;
+.fa-trash {
+  display: none;
 }
-.article {
-  margin: 20px;
-  h2 {
-    background-color: plum;
+li {
+  cursor: pointer;
+}
+li:hover {
+  .fa-trash {
+    display: inline;
+    color: orangered;
   }
 }
-
-.responsive {
-  color: slateblue;
-  font-size: 2vw;
-}
-p.bold {
-  font-weight: bold;
-  font-family: Georgia, serif;
-}
-p.cursive {
-  font-style: italic;
-}
-p.font-variant {
-  font-variant: small-caps;
-  font-family: monospace;
-}
-.tab {
-  color: rebeccapurple;
-  font-size: medium;
-}
-
-input.country {
-  width: 200px;
-  height: 20px;
-  padding: 10px;
-  margin: 15px;
-  font-size: 15px;
-  border-radius: 10px;
-}
-button.done {
-  width: 75px;
-  height: 30px;
-  font-size: 15px;
-  border-radius: 10px;
-  background-color: lightcoral;
-}
-table,
-td,
-th,
-tr {
-  border-collapse: collapse;
-  border: 1px solid black;
-}
-.table1,
-.table2 {
-  margin: 15px;
-}
-p {
-  text-indent: 15px;
-}
-h3 {
-  text-align: center;
-  text-transform: capitalize;
-}
-a:link {
-  color: orchid;
-}
-a:visited {
-  color: green;
-}
-a:hover {
-  color: brown;
-}
-a:active {
-  color: khaki;
-}
-aside {
-  float: right;
-  width: 25%;
-  margin: 50px 10px;
-}
-ol ~ li {
-  background-color: greenyellow;
-}
-ol > li {
-  background-color: yellow;
-}
-.secondOrderedList > li {
-  color: red;
-}
-.secondOrderedList > ul > li {
-  color: grey;
-}
-
-#songs {
-  width: 200px;
-  height: 300px;
-  border: 1px dashed red;
-  padding: 20px 10px;
-  margin: 5px;
-}
-.postion {
-  margin: 20px;
-  padding: 15px;
-  position: relative;
-}
-.textOnThePhoto {
-  position: absolute;
-  top: 70px;
-  color: orange;
-  background: yellow;
-}
-.giftOnLine {
-  position: relative;
-}
-
-.fa-gift {
-  color: red;
-  background-color: white;
-  font-size: 30px;
-  position: absolute;
-  top: -10px;
-  right: 450px;
-  padding: 0 20px;
-}
-#col {
-  background-color: wheat;
-}
-.table1 {
-  border: 2 px solid black;
-}
-.table2 {
-  width: 480px;
-  height: 278px;
-}
-#red {
-  background-color: red;
-}
-#yellow {
-  background-color: yellow;
-}
-#green {
-  background-color: green;
-}
-#brown {
-  background-color: brown;
-}
-#grey {
-  background-color: grey;
-}
-#skyblue {
-  background-color: skyblue;
-}
-#purple {
-  background-color: purple;
-}
-#orange {
-  background-color: orange;
-}
-#khaki {
-  background-color: khaki;
-}
-#blue {
-  background-color: blue;
-}
-#olive {
-  background-color: olive;
-}
-#olivedrab {
-  background-color: olivedrab;
-}
-#peru {
-  background-color: peru;
+.header {
+  border-bottom: 1px solid #717171;
 }
 #pink {
-  background-color: pink;
+  background-color: #ffb8b3;
+  .header {
+    background-color: #ff8880;
+  }
 }
-#salmon {
-  background-color: salmon;
+#blue {
+  background-color: #b6fbf4;
+  .header {
+    background-color: #54c4b9;
+  }
 }
-
-footer {
-  clear: both;
+#yellow {
+  background-color: #ffebb0;
+  .header {
+    background-color: #c6ab5c;
+  }
 }
-*/
+#violet {
+  background-color: #eeccee;
+  .header {
+    background-color: #a560a5;
+  }
+}
+.h-10 {
+  height: 10%;
+}
+.h-15 {
+  height: 15%;
+}

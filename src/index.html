@@ -3,544 +3,253 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Fun page about Depeche Mode" />
-    <meta name="keywords" content="Depeche Mode, songs of the 80th, synthpop" />
-    <meta name="author" content="Victoria Furman" />
-    <title>ProFrontend page</title>
-    <script
-      src="https://kit.fontawesome.com/a93683c622.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Matrix</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">ProFrontend</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="dropdown01"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Dropdown</a
-            >
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="text"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-warning my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
-    </nav>
-    <section class="container mt-5">
+    <!--  -->
+    <div class="container-fluid app">
       <div class="row">
-        <div class="col-md-6">
-          <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">
-              This is a simple hero unit, a simple jumbotron-style component for
-              calling extra attention to featured content or information.
-            </p>
-            <hr class="my-4" />
-            <p>
-              It uses utility classes for typography and spacing to space
-              content out within the larger container.
-            </p>
-            <a class="btn btn-warning btn-lg" href="#" role="button"
-              >Learn more</a
-            >
-          </div>
-        </div>
-        <div class="col-md-6">
-          <img class="w-100" src="../src/images/obl-01.jpg" />
-        </div>
-      </div>
-    </section>
-    <section class="container for-whom mt-5 mb-5">
-      <div class="row">
-        <div class="col-md-8 offset-md-2 my-2 text-center">
-          <h2>Кому подойдет курс?</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="text-center">
-                <i class="fas fa-user-friends icon-container text-warning"></i>
-              </div>
-              <h4>
-                Junior Developer
-              </h4>
-              <div class="description">
-                Junior Software Developers are entry-level software developers
-                that assist the development team with all aspects of software
-                design and coding. Their primary role is to learn the codebase,
-                attend design meetings, write basic code, fix bugs, and assist
-                the Development Manager in all design-related tasks.
-              </div>
+        <div class="col-6" id="pink">
+          <div class="row h-10 header">
+            <div class="col-12">
+              <h4>Important and Urgent</h4>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <div class="text-center">
-                <i class="fas fa-user-cog text-warning"></i>
-              </div>
-              <h4>
-                Mid Developer
-              </h4>
-              <div class="description">
-                Mid-level developers are not designing solutions either, they
-                just perform tasks. The difference with the junior developer is
-                that they perform those
-              </div>
+          <div class="row h-75">
+            <div class="col-6">
+              TO DO
+              <ul class="toDo">
+                <li>
+                  <input type="checkbox" /> Task 1<i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" />Task 2<i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" />Task 3<i class="fas fa-trash"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              DONE
+              <ul class="doneThings">
+                <li>
+                  <input type="checkbox" checked /> Task 1<i
+                    class="fas fa-trash"
+                  ></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked />Task 2
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked />Task 3
+                  <i class="fas fa-trash"></i>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <div class="text-center">
-                <i class="fas fa-hands-helping text-warning"></i>
-              </div>
-              <h4>
-                Senior Developer
-              </h4>
-              <div class="description">
-                Mid-level developers are not designing solutions either, they
-                just perform tasks. The difference with the junior developer is
-                that they perform those
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class=" container aboutTheSchool mt-5">
-      <div class="row">
-        <div class="col-md-8 offset-md-2 my-2 text-center">
-          <h2>О нашей школе</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 offset-md-2 text-center">
-          <p>
-            We teach you how to make sites. We will explain how a browser works,
-            how to put into practice HTML, CSS, JavaScript (ES6). Our teachers
-            will explain how to repeat framework steps. They will tell how the
-            Gulp/webpack works (it’s a tool for collecting applications). You
-            will learn tools for accelerating development. And you will use the
-            newest rules which will soon become standards.
-          </p>
-        </div>
-      </div>
-      <div class="row col-md-8 offset-md-2 text-center">
-        <div class="col-sm">
-          <img class="square-image" src="../src/images/html-5.png" />
-        </div>
-        <div class="col-sm">
-          <img class="square-image" src="../src/images/css-3.png" />
-        </div>
-        <div class="col-sm">
-          <img class="square-image" src="../src/images/javascript.png" />
-        </div>
-        <div class="col-sm">
-          <img class="square-image" src="../src/images/html-5.png" />
-        </div>
-        <div class="col-sm">
-          <img class="square-image" src="../src/images/css-3.png" />
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid map">
-      <div class="row registr">
-        <div class="col-md-6 offset-md-3 text-center mt-5">
-          <h3>Register now!</h3>
-          <form>
-            <div class="form-row mt-3">
-              <div class="col">
+          <div class="row h-15">
+            <div class="col-8">
+              <div class="form-group">
                 <input
                   type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Last name"
+                  class="form-control addNewTask"
+                  placeholder="Add new text"
                 />
               </div>
             </div>
-            <button
-              type="button"
-              class="btn btn-warning btn-lg btn-block button"
-            >
-              Register!
-            </button>
-          </form>
+
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6" id="blue">
+          <div class="row h-10 header">
+            <div class="col-12">
+              <h4>Important and not Urgent</h4>
+            </div>
+          </div>
+          <div class="row h-75">
+            <div class="col-6">
+              TO DO
+              <ul class="toDo">
+                <li>
+                  <input type="checkbox" /> Task 1<i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" />Task 2<i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" />Task 3<i class="fas fa-trash"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              DONE
+              <ul class="doneThings">
+                <li>
+                  <input type="checkbox" checked /> Task 1<i
+                    class="fas fa-trash"
+                  ></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked />Task 2<i
+                    class="fas fa-trash"
+                  ></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked />Task 3<i
+                    class="fas fa-trash"
+                  >
+                  </i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row h-15">
+            <div class="col-8">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control addNewTask "
+                  placeholder="Add new text"
+                />
+              </div>
+            </div>
+
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block">
+                Add
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+
+      <div class="row">
+        <div class="col-6" id="yellow">
+          <div class="row h-10 header">
+            <div class="col-12">
+              <h4>Not Important but Urgent</h4>
+            </div>
+          </div>
+          <div class="row h-75">
+            <div class="col-6">
+              TO DO
+              <ul class="toDo">
+                <li>
+                  <input type="checkbox" /> Task 1 <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" />Task 2 <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" />Task 3 <i class="fas fa-trash"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              DONE
+              <ul class="doneThings">
+                <li>
+                  <input type="checkbox" checked /> Task 1<i
+                    class="fas fa-trash"
+                  ></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked />Task 2
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked />Task 3
+                  <i class="fas fa-trash"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row h-15">
+            <div class="col-8">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control addNewTask"
+                  placeholder="Add new text"
+                />
+              </div>
+            </div>
+
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6" id="violet">
+          <div class="row h-10 header">
+            <div class="col-12">
+              <h4>Not Important and Not Urgent</h4>
+            </div>
+          </div>
+          <div class="row h-75">
+            <div class="col-6">
+              TO DO
+              <ul class="toDo">
+                <li>
+                  <input type="checkbox" /> Task 1<i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" />Task 2<i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" />Task 3<i class="fas fa-trash"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              DONE
+              <ul class="doneThings">
+                <li>
+                  <input type="checkbox" checked /> Task 1<i
+                    class="fas fa-trash"
+                  ></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked />Task 2
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked />Task 3
+                  <i class="fas fa-trash"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row h-15">
+            <div class="col-8">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control addNewTask"
+                  placeholder="Add new task"
+                />
+              </div>
+            </div>
+
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-
-<!---
-  <body onload="console.log ('The page is loaded')">
-    <header>
-      <span id="head1">Depeche Mode</span>
-      <nav>
-        <a href="http://localhost:8080">Home</a>
-        <a target="_blank" href="http://www.twilightillusion.net/andthen/"
-          >Blog</a
-        >
-        <a target="_blank" href="https://depechemodeshop.com">Store</a>
-      </nav>
-    </header>
-    <div>
-      <main>
-        <section class="article">
-          <h2 class="tab">My First HTML page</h2>
-          <h3 class="tab">With styles and semantic tags</h3>
-          <article>
-            <p>
-              Depeche Mode are an English electronic music band formed in
-              Basildon, Essex in 1980. The group as of now consists of a trio of
-              Dave Gahan (lead vocals and co-songwriting), Martin Gore
-              (keyboards, guitar, co-lead vocals and main songwriting), and Andy
-              Fletcher (keyboards).
-            </p>
-            <section class="images">
-              <a
-                target="_blank"
-                href="https://ru.wikipedia.org/wiki/Depeche_Mode"
-              >
-                <figure>
-                  <img
-                    src="https://www.soyuz.ru/public/uploads/files/2/7391415/20190919220801db712e3053.jpg"
-                    alt="Depeche Mode "
-                    width="200px"
-                  />
-                  <figcaption>Depeche Mode</figcaption>
-                </figure>
-              </a>
-            </section>
-
-            <section>
-              <video controls width="400px">
-                <source src="../src/video/videoplayback.mp4" type="video/mp4" />
-              </video>
-            </section>
-            <p>
-              Depeche Mode released their debut album <em>Speak & Spell</em> in
-              1981, bringing the band onto the British new wave scene. Founding
-              member Vince Clarke left after the release of the album; they
-              recorded <em>A Broken Frame</em> as a trio. Gore took over as main
-              songwriter and, later in 1982, Alan Wilder replaced Clarke,
-              establishing a lineup that continued for 13 years.
-            </p>
-
-            <div class="position">
-              <img
-                src="../src/images/500x500.jpg"
-                alt="Young Depeche Mode"
-                width="300px"
-              />
-            </div>
-
-            <p>
-              The band's last albums of the 1980s,
-              <em>Black Celebration</em> and <em>Music for the Masses</em>,
-              established them as a dominant force within the electronic music
-              scene. A highlight of this era was the band's June 1988 concert at
-              the Pasadena Rose Bowl, where they drew a crowd in excess of
-              60,000 people. In early 1990, they released <em>Violator</em>, an
-              international mainstream success. The following album,<em
-                >Songs of Faith and Devotion</em
-              >
-              in 1993 was also a success, though internal struggles within the
-              band during recording and touring resulted in Wilder's departure
-              in 1995.
-            </p>
-            <section>
-              <audio controls>
-                <source
-                  src="../src/audio/depeche_mode_personal_jesus-namobilu.com.mp3"
-                  type="audio/mp3"
-                />
-                The most popular song of the band
-              </audio>
-            </section>
-            <p>
-              Depeche Mode has had 54 songs in the UK Singles Chart and 17 top
-              10 albums in the UK chart; they have sold more than 100 million
-              records worldwide. Q included the band in the list of the "50
-              Bands That Changed the World!". Depeche Mode also rank number 98
-              on VH1's "100 Greatest Artists of All Time".In December 2016,
-              Billboard named Depeche Mode the 10th most successful dance club
-              artist of all time. They were nominated for induction into the
-              Rock and Roll Hall of Fame in 2017 and 2018, and will be inducted
-              as part of the Class of 2020.
-            </p>
-          </article>
-        </section>
-        <section>
-          <h2 class="responsive">Interesting facts about the band</h2>
-          <p class="bold">
-            Q included the band in the list of the “50 Bands That Changed the
-            World!”.
-          </p>
-          <p class="cursive">
-            Depeche Mode also rank number 98 on VH1’s “100 Greatest Artists of
-            All Time”.
-          </p>
-          <p class="font-variant">
-            Depeche Mode released their debut album Speak & Spell in 1981,
-            bringing the band onto the British new wave scene. Original band
-            member Vince Clarke (keyboards, guitar, main songwriter from 1980 to
-            1981), left the band after the release of the album, leaving the
-            band as a trio to record A Broken Frame, released the following
-            year.
-          </p>
-        </section>
-
-        <section>
-          <input
-            class="country"
-            type="text"
-            value="Enter your county"
-            onchange="getVisitorsCountries()"
-            onkeydown="console.log ('The user has started typing ')"
-          />
-          <button
-            class="done"
-            type="button"
-            value="Готово"
-            onclick="buttonClick()"
-          >
-            Done
-          </button>
-        </section>
-
-        <table class="table1">
-          <colgroup id="col">
-            <col span="1" />
-            <colgroup>
-              <col span="1" style=" background-color:antiquewhite;" />
-            </colgroup>
-
-            <thead>
-              <tr>
-                <th rowspan="3">Day</th>
-                <th colspan="3">Модуль 2 -ProFrontend</th>
-              </tr>
-              <tr>
-                <th colspan="2">План</th>
-                <th rowspan="2">Тема</th>
-              </tr>
-              <tr>
-                <th>Начало</th>
-                <th>Конец</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td rowspan="2">Понедельник</td>
-                <td rowspan="2">20:00</td>
-                <td rowspan="2">21:00</td>
-                <td>HTML:Списки</td>
-              </tr>
-              <tr>
-                <td>HTML:Таблицы</td>
-              </tr>
-              <tr>
-                <td>Среда</td>
-                <td>19:00</td>
-                <td>22:00</td>
-                <td>HTML:Ссылки и картинки</td>
-              </tr>
-              <tr>
-                <td>Пятница</td>
-                <td>21:00</td>
-                <td>22:00</td>
-                <td>Домашка</td>
-              </tr>
-            </tbody>
-          </colgroup>
-        </table>
-
-        <br />
-
-        <table class="table2">
-          <tbody>
-            <tr>
-              <td id="red" colspan="6" rowspan="2"></td>
-              <td id="yellow" rowspan="2"></td>
-              <td id="green" colspan="3" rowspan="5"></td>
-            </tr>
-            <tr></tr>
-            <tr>
-              <td id="brown" colspan="3"></td>
-              <td id="grey" rowspan="3"></td>
-              <td id="skyblue" colspan="2"></td>
-              <td id="purple"></td>
-            </tr>
-            <tr>
-              <td id="orange" rowspan="3" colspan="3"></td>
-              <td id="khaki" colspan="2" rowspan="2"></td>
-              <td id="blue" rowspan="2"></td>
-            </tr>
-            <tr></tr>
-            <tr>
-              <td id="olive" colspan="4"></td>
-              <td id="olivedrab" colspan="3"></td>
-            </tr>
-            <tr>
-              <td id="peru" colspan="3" rowspan="2"></td>
-              <td id="pink" rowspan="2"></td>
-              <td id="salmon" colspan="6" rowspan="2"></td>
-            </tr>
-            <tr></tr>
-          </tbody>
-        </table>
-        <div class="postion">
-          <section class="giftOnLine">
-            <hr />
-            <i class="fas fa-gift"></i>
-          </section>
-          <h2 class="textOnThePhoto">The best photo of the band</h2>
-          <img
-            src="../src/images/160063.jpg"
-            alt="The best band's photo"
-            width="200px"
-          />
-        </div>
-        <h2>Учасники группы:</h2>
-        <a href="https://ru.wikipedia.org/wiki/Гаан,_Дейв" target="_blank">
-          Дейв Гаан</a
-        >
-        <br />
-        <a href="https://ru.wikipedia.org/wiki/Гор,_Мартин" target="_blank"
-          >Мартин Гор</a
-        >
-        <br />
-        <a href="https://ru.wikipedia.org/wiki/Флетчер,_Энди" target="_blank"
-          >Энди Флетчер</a
-        >
-        <br />
-        <a href="https://ru.wikipedia.org/wiki/Уайлдер,_Алан" target="_blank"
-          >Алан Уайлдер</a
-        >
-      </main>
-
-      <aside>
-        <section id="list">
-          <h3 class="tab">Series & Movies List</h3>
-          <ul>
-            <li>Sitcom</li>
-            <ol>
-              <li>Brooklyn Nine-Nine</li>
-              <li>The Big Bang Theory</li>
-              <li>Modern Family</li>
-            </ol>
-            <li>Drama</li>
-            <ol class="secondOrderedList">
-              <li>The Handmaid's Tale</li>
-              <li>The Crown</li>
-              <li>Drama Movies</li>
-              <ul>
-                <li>Lady Bird</li>
-                <li>12 Years a Slave</li>
-              </ul>
-            </ol>
-          </ul>
-        </section>
-
-        <section id="songs" onmouseover="aboutTheFirstAlbum()">
-          <i class="fas fa-guitar"></i>
-          <h2 class="tab">Speak & Spell (the first album)</h2>
-          <pre>
-1. "New Life" 
-2. "Puppets" 
-3. "Dreaming of Me" 
-4. "Boys Say Go!" 
-5. "Nodisco" 
- "What's Your Name?" 
-7. "Photographic"
-8. "Tora! Tora! Tora!" 
-9. "Big Muff" 4:21
-10. "Any Second Now"
-11. "Just Can't Get Enough"
-      </pre
-          >
-        </section>
-        <section>
-          <iframe
-            width="300"
-            height="315"
-            src="https://www.youtube.com/embed/xGrD_BgfI0k"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </section>
-      </aside>
-    </div>
-
-    <footer onmouseout="console.log ('User has looked through the whole page')">
-      <a href="http://localhost:8080">Home page</a>
-      <a href="https://www.facebook.com" target="_blank">Contact</a>
-      <a href="https://www.facebook.com" target="_blank">About us</a>
-    </footer>
-  </body>
-  -->
